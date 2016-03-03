@@ -1,5 +1,7 @@
 language: ruby
-sudo: false
+sudo: required
+before_install:
+    - sudo apt-get update && apt-get install --only-upgrade cmake
 rvm:
   - 2.2.2
 script:
